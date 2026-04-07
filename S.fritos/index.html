@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Super Fritos</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #fff3d6;
+    }
+
+    header {
+        background: #f9f1c6;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background: #f3b4f5;
+        padding: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .body-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        background: #fff;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        background: #fdbff5;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+<header style="background: #f9f1c6;; color: #000000; padding: 20px; text-align: center;">
+    <h1>🥟 Super Fritos 🥟</h1>
+    <h1>Los fritos más bacanos de Bucarmanga</h1>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Conócenos</a>
+    <a href="#">Tienda</a>
+    <a href="#">Galería</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<section class="contenedor">
+
+    <div class="card">
+        <h3>Nosotros</h3>
+        <p>Misión</p>
+        <p>Visión</p>
+        <p>Historia</p>
+        <p>Políticas</p>
+    </div>
+
+    <div class="card">
+        <h3>Tienda</h3>
+        <p>Productos ⇩</p>
+        <details style="margin: auto; width: 200px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        
+        <summary style="cursor: pointer; font-weight: bold; font-size: 18px; color:#f074e5;">
+            menú
+        </summary>
+
+        <ul style="list-style: none; padding: 0; margin-top: 10px;">
+            <li style="margin: 10px 0;">
+                <strong>Empanadas</strong><br>
+                Carne bien jugosa - $2.000
+            </li>
+
+            <li style="margin: 10px 0;">
+                <strong>Papas Rellenas</strong><br>
+                Crujientes y deliciosas - $3.000
+            </li>
+
+            <li style="margin: 10px 0;">
+                <strong>Arepa Rellena</strong><br>
+                Queso y carne - $5.000
+            </li>
+        </ul>
+
+    </details>
+       
+    </div>
+     <div class="card">
+         
+        <p>Haz tu pedido</p>
+        <section style="text-align: center; padding: 20px;">
+    <h2>📋 Haz tu pedido</h2>
+
+    <form style="max-width: 300px; margin: auto; display: flex; flex-direction: column; gap: 10px;">
+        
+        <input type="text" placeholder="Tu nombre" required 
+        style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+
+        <input type="tel" placeholder="Teléfono" required 
+        style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+
+        <select required style="padding: 8px; border-radius: 5px;">
+            <option value="">Selecciona producto</option>
+            <option>Empanadas</option>
+            <option>Papas Rellenas</option>
+            <option>Arepa Rellena</option>
+        </select>
+
+        <input type="number" placeholder="Cantidad" required 
+        style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+
+        <textarea placeholder="Dirección o comentario" 
+        style="padding: 8px; border-radius: 5px;"></textarea>
+
+        <button type="submit" 
+        style="background:#e969c3; color:white; border:none; padding:10px; border-radius:5px; cursor:pointer;">
+            Pedir ahora
+        </button>
+
+    </form>
+</section>
+     </div>
+
+    <div class="card">
+        <img src="img/empanada.jpg" alt="Fritos">
+    </div>
+
+    <div class="card">
+        <h3>Contacto</h3>
+        <p>📞 Teléfono</p>
+        <p>💬 WhatsApp</p>
+        <p>📧 Correo</p>
+    </div>
+
+</section>
+
+<section class="body-section">
+    <img src="img/fritos.png" width="300">
+    
+    <h1><strong>Las empanadas y fritos más ricos de bucaramanga</strong></h1>
+    
+    <img src="img/empanada2.png" width="180">
+</section>
+
+<footer>
+    <p>📱 Redes sociales</p>
+    <p>© Xiomara peña zabaleta</p>
+</footer>
+
+</body>
+</html>
